@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace GuessGameBenF
 {
-    static class Program
+    static class GuessGame
     {
         /// <summary>
         /// The main entry point for the application.
