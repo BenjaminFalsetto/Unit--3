@@ -31,17 +31,26 @@ namespace GuessGameBenF
         {
             //declare variables
             Random rnd = new Random();
-            int ANS = rnd.Next(1, 11);
+            int ans = rnd.Next(1, 11);
             int guess = (int)(nudGuess.Value);
 
             //check user input
+            if (guess == ans)
             {
-                if (guess == ANS) ;
                 this.lblCorrect.Show();
+                this.lblIncorrect.Hide();
             }
-            
-            else
+            if (guess > ans)
+            {
+                this.lblIncorrect.Show();
+                this.lblCorrect.Hide();
+            }
+            if (guess < ans)
+            {
+                this.lblIncorrect.Show();
+                this.lblCorrect.Hide();
+            }
 
-        }   
+        }
     }
-}
+}   
