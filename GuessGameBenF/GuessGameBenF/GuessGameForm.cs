@@ -35,13 +35,16 @@ namespace GuessGameBenF
             int guess = (int)(nudGuess.Value);
 
             //check user input
+            if (guess == ANS)
             {
-                if (guess == ANS) ;
                 this.lblCorrect.Show();
+                this.lblIncorrect.Hide();
             }
-            
-            else
-
+            if (guess < ANS)
+            {
+                this.lblIncorrect.Show();
+                this.lblCorrect.Hide();
+            }
         }   
     }
 }
