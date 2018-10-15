@@ -29,14 +29,18 @@
         private void InitializeComponent()
         {
             this.grbUserInput = new System.Windows.Forms.GroupBox();
-            this.radUserRock = new System.Windows.Forms.RadioButton();
-            this.radUserPaper = new System.Windows.Forms.RadioButton();
             this.radUserScissors = new System.Windows.Forms.RadioButton();
+            this.radUserPaper = new System.Windows.Forms.RadioButton();
+            this.radUserRock = new System.Windows.Forms.RadioButton();
             this.grbComInput = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radComScissors = new System.Windows.Forms.RadioButton();
+            this.radComPaper = new System.Windows.Forms.RadioButton();
+            this.radComRock = new System.Windows.Forms.RadioButton();
             this.btnPlay = new System.Windows.Forms.Button();
+            this.lblComPoints = new System.Windows.Forms.Label();
+            this.lblUserPoints = new System.Windows.Forms.Label();
+            this.txtUserPoints = new System.Windows.Forms.TextBox();
+            this.txtComPoints = new System.Windows.Forms.TextBox();
             this.grbUserInput.SuspendLayout();
             this.grbComInput.SuspendLayout();
             this.SuspendLayout();
@@ -53,16 +57,16 @@
             this.grbUserInput.TabStop = false;
             this.grbUserInput.Text = "Player";
             // 
-            // radUserRock
+            // radUserScissors
             // 
-            this.radUserRock.AutoSize = true;
-            this.radUserRock.Location = new System.Drawing.Point(19, 20);
-            this.radUserRock.Name = "radUserRock";
-            this.radUserRock.Size = new System.Drawing.Size(51, 17);
-            this.radUserRock.TabIndex = 0;
-            this.radUserRock.TabStop = true;
-            this.radUserRock.Text = "Rock";
-            this.radUserRock.UseVisualStyleBackColor = true;
+            this.radUserScissors.AutoSize = true;
+            this.radUserScissors.Location = new System.Drawing.Point(19, 66);
+            this.radUserScissors.Name = "radUserScissors";
+            this.radUserScissors.Size = new System.Drawing.Size(64, 17);
+            this.radUserScissors.TabIndex = 2;
+            this.radUserScissors.TabStop = true;
+            this.radUserScissors.Text = "Scissors";
+            this.radUserScissors.UseVisualStyleBackColor = true;
             // 
             // radUserPaper
             // 
@@ -75,22 +79,22 @@
             this.radUserPaper.Text = "Paper";
             this.radUserPaper.UseVisualStyleBackColor = true;
             // 
-            // radUserScissors
+            // radUserRock
             // 
-            this.radUserScissors.AutoSize = true;
-            this.radUserScissors.Location = new System.Drawing.Point(19, 66);
-            this.radUserScissors.Name = "radUserScissors";
-            this.radUserScissors.Size = new System.Drawing.Size(64, 17);
-            this.radUserScissors.TabIndex = 2;
-            this.radUserScissors.TabStop = true;
-            this.radUserScissors.Text = "Scissors";
-            this.radUserScissors.UseVisualStyleBackColor = true;
+            this.radUserRock.AutoSize = true;
+            this.radUserRock.Location = new System.Drawing.Point(19, 20);
+            this.radUserRock.Name = "radUserRock";
+            this.radUserRock.Size = new System.Drawing.Size(51, 17);
+            this.radUserRock.TabIndex = 0;
+            this.radUserRock.TabStop = true;
+            this.radUserRock.Text = "Rock";
+            this.radUserRock.UseVisualStyleBackColor = true;
             // 
             // grbComInput
             // 
-            this.grbComInput.Controls.Add(this.radioButton1);
-            this.grbComInput.Controls.Add(this.radioButton2);
-            this.grbComInput.Controls.Add(this.radioButton3);
+            this.grbComInput.Controls.Add(this.radComScissors);
+            this.grbComInput.Controls.Add(this.radComPaper);
+            this.grbComInput.Controls.Add(this.radComRock);
             this.grbComInput.Enabled = false;
             this.grbComInput.Location = new System.Drawing.Point(41, 205);
             this.grbComInput.Name = "grbComInput";
@@ -99,43 +103,43 @@
             this.grbComInput.TabStop = false;
             this.grbComInput.Text = "Computer";
             // 
-            // radioButton1
+            // radComScissors
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(19, 66);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(64, 17);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Scissors";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radComScissors.AutoSize = true;
+            this.radComScissors.Location = new System.Drawing.Point(19, 66);
+            this.radComScissors.Name = "radComScissors";
+            this.radComScissors.Size = new System.Drawing.Size(64, 17);
+            this.radComScissors.TabIndex = 2;
+            this.radComScissors.TabStop = true;
+            this.radComScissors.Text = "Scissors";
+            this.radComScissors.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radComPaper
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(19, 43);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(53, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Paper";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radComPaper.AutoSize = true;
+            this.radComPaper.Location = new System.Drawing.Point(19, 43);
+            this.radComPaper.Name = "radComPaper";
+            this.radComPaper.Size = new System.Drawing.Size(53, 17);
+            this.radComPaper.TabIndex = 1;
+            this.radComPaper.TabStop = true;
+            this.radComPaper.Text = "Paper";
+            this.radComPaper.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radComRock
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(19, 20);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(51, 17);
-            this.radioButton3.TabIndex = 0;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Rock";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radComRock.AutoSize = true;
+            this.radComRock.Location = new System.Drawing.Point(19, 20);
+            this.radComRock.Name = "radComRock";
+            this.radComRock.Size = new System.Drawing.Size(51, 17);
+            this.radComRock.TabIndex = 0;
+            this.radComRock.TabStop = true;
+            this.radComRock.Text = "Rock";
+            this.radComRock.UseVisualStyleBackColor = true;
             // 
             // btnPlay
             // 
             this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlay.Location = new System.Drawing.Point(345, 166);
+            this.btnPlay.Location = new System.Drawing.Point(218, 335);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(77, 27);
             this.btnPlay.TabIndex = 2;
@@ -143,11 +147,51 @@
             this.btnPlay.UseVisualStyleBackColor = true;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
+            // lblComPoints
+            // 
+            this.lblComPoints.AutoSize = true;
+            this.lblComPoints.Location = new System.Drawing.Point(293, 205);
+            this.lblComPoints.Name = "lblComPoints";
+            this.lblComPoints.Size = new System.Drawing.Size(84, 13);
+            this.lblComPoints.TabIndex = 4;
+            this.lblComPoints.Text = "Computer Points";
+            // 
+            // lblUserPoints
+            // 
+            this.lblUserPoints.AutoSize = true;
+            this.lblUserPoints.Location = new System.Drawing.Point(293, 55);
+            this.lblUserPoints.Name = "lblUserPoints";
+            this.lblUserPoints.Size = new System.Drawing.Size(68, 13);
+            this.lblUserPoints.TabIndex = 3;
+            this.lblUserPoints.Text = "Player Points";
+            // 
+            // txtUserPoints
+            // 
+            this.txtUserPoints.Enabled = false;
+            this.txtUserPoints.Location = new System.Drawing.Point(381, 52);
+            this.txtUserPoints.Name = "txtUserPoints";
+            this.txtUserPoints.Size = new System.Drawing.Size(100, 20);
+            this.txtUserPoints.TabIndex = 5;
+            this.txtUserPoints.Text = "0";
+            // 
+            // txtComPoints
+            // 
+            this.txtComPoints.Enabled = false;
+            this.txtComPoints.Location = new System.Drawing.Point(381, 202);
+            this.txtComPoints.Name = "txtComPoints";
+            this.txtComPoints.Size = new System.Drawing.Size(100, 20);
+            this.txtComPoints.TabIndex = 6;
+            this.txtComPoints.Text = "0";
+            // 
             // RockPaperScissorsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(506, 392);
+            this.Controls.Add(this.txtComPoints);
+            this.Controls.Add(this.txtUserPoints);
+            this.Controls.Add(this.lblComPoints);
+            this.Controls.Add(this.lblUserPoints);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.grbComInput);
             this.Controls.Add(this.grbUserInput);
@@ -158,6 +202,7 @@
             this.grbComInput.ResumeLayout(false);
             this.grbComInput.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -168,10 +213,14 @@
         private System.Windows.Forms.RadioButton radUserPaper;
         private System.Windows.Forms.RadioButton radUserRock;
         private System.Windows.Forms.GroupBox grbComInput;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radComScissors;
+        private System.Windows.Forms.RadioButton radComPaper;
+        private System.Windows.Forms.RadioButton radComRock;
         private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Label lblComPoints;
+        private System.Windows.Forms.Label lblUserPoints;
+        private System.Windows.Forms.TextBox txtUserPoints;
+        private System.Windows.Forms.TextBox txtComPoints;
     }
 }
 
