@@ -63,8 +63,7 @@
             this.radUserScissors.Location = new System.Drawing.Point(19, 66);
             this.radUserScissors.Name = "radUserScissors";
             this.radUserScissors.Size = new System.Drawing.Size(64, 17);
-            this.radUserScissors.TabIndex = 2;
-            this.radUserScissors.TabStop = true;
+            this.radUserScissors.TabIndex = 0;
             this.radUserScissors.Text = "Scissors";
             this.radUserScissors.UseVisualStyleBackColor = true;
             // 
@@ -74,8 +73,7 @@
             this.radUserPaper.Location = new System.Drawing.Point(19, 43);
             this.radUserPaper.Name = "radUserPaper";
             this.radUserPaper.Size = new System.Drawing.Size(53, 17);
-            this.radUserPaper.TabIndex = 1;
-            this.radUserPaper.TabStop = true;
+            this.radUserPaper.TabIndex = 0;
             this.radUserPaper.Text = "Paper";
             this.radUserPaper.UseVisualStyleBackColor = true;
             // 
