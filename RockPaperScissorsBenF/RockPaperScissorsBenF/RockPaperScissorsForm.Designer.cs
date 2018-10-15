@@ -86,7 +86,6 @@
             this.radUserRock.Name = "radUserRock";
             this.radUserRock.Size = new System.Drawing.Size(51, 17);
             this.radUserRock.TabIndex = 0;
-            this.radUserRock.TabStop = true;
             this.radUserRock.Text = "Rock";
             this.radUserRock.UseVisualStyleBackColor = true;
             // 
