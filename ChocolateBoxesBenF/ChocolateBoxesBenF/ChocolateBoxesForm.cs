@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ChocolateBoxesBenF
 {
-    public partial class Form1 : Form
+    public partial class frmChocolateBoxes : Form
     {
-        public Form1()
+        public frmChocolateBoxes()
         {
             InitializeComponent();
         }
