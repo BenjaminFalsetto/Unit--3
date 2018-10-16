@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Created by: Benjamin Falsetto
+ * Created on: 2018/10/16
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #18 - Rock, Paper, Scissors
+ * This program allows a user to play rock, paper, scissors against the computer.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
