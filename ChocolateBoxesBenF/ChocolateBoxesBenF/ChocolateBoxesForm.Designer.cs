@@ -30,34 +30,47 @@
         {
             this.lblNumDeliv = new System.Windows.Forms.Label();
             this.txtNumDeliv = new System.Windows.Forms.TextBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNumDeliv
             // 
             this.lblNumDeliv.AutoSize = true;
-            this.lblNumDeliv.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumDeliv.Location = new System.Drawing.Point(-1, 35);
+            this.lblNumDeliv.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumDeliv.Location = new System.Drawing.Point(-1, 28);
+            this.lblNumDeliv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNumDeliv.Name = "lblNumDeliv";
-            this.lblNumDeliv.Size = new System.Drawing.Size(543, 30);
+            this.lblNumDeliv.Size = new System.Drawing.Size(472, 26);
             this.lblNumDeliv.TabIndex = 0;
             this.lblNumDeliv.Text = "How many boxes of chocolates did you deliver?";
             // 
             // txtNumDeliv
             // 
             this.txtNumDeliv.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNumDeliv.Location = new System.Drawing.Point(90, 154);
+            this.txtNumDeliv.Location = new System.Drawing.Point(59, 114);
+            this.txtNumDeliv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNumDeliv.Name = "txtNumDeliv";
-            this.txtNumDeliv.Size = new System.Drawing.Size(100, 22);
+            this.txtNumDeliv.Size = new System.Drawing.Size(76, 20);
             this.txtNumDeliv.TabIndex = 1;
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnSubmit.Location = new System.Drawing.Point(59, 182);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.TabIndex = 2;
+            this.btnSubmit.Text = "button1";
+            this.btnSubmit.UseVisualStyleBackColor = true;
             // 
             // frmChocolateBoxes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 476);
+            this.ClientSize = new System.Drawing.Size(471, 387);
+            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtNumDeliv);
             this.Controls.Add(this.lblNumDeliv);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmChocolateBoxes";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -69,6 +82,7 @@
 
         private System.Windows.Forms.Label lblNumDeliv;
         private System.Windows.Forms.TextBox txtNumDeliv;
+        private System.Windows.Forms.Button btnSubmit;
     }
 }
 
