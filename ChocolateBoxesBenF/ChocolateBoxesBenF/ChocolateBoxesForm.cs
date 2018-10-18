@@ -16,5 +16,16 @@ namespace ChocolateBoxesBenF
         {
             InitializeComponent();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            //declare local variables
+            int boxDelivered;
+
+            //get number of boxes sold by user
+            boxDelivered = (int)(nudBoxDelivered.Value);
+
+
+        }
     }
 }
