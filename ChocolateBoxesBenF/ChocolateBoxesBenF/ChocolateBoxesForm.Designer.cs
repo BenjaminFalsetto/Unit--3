@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChocolateBoxes));
             this.lblNumDeliv = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.nudBoxDelivered = new System.Windows.Forms.NumericUpDown();
+            this.lblHereYouGo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudBoxDelivered)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,20 +60,42 @@
             // nudBoxDelivered
             // 
             this.nudBoxDelivered.Location = new System.Drawing.Point(59, 104);
+            this.nudBoxDelivered.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudBoxDelivered.Name = "nudBoxDelivered";
             this.nudBoxDelivered.Size = new System.Drawing.Size(120, 20);
             this.nudBoxDelivered.TabIndex = 3;
+            this.nudBoxDelivered.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // lblHereYouGo
+            // 
+            this.lblHereYouGo.AutoSize = true;
+            this.lblHereYouGo.Font = new System.Drawing.Font("Stencil Std", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHereYouGo.Location = new System.Drawing.Point(12, 258);
+            this.lblHereYouGo.Name = "lblHereYouGo";
+            this.lblHereYouGo.Size = new System.Drawing.Size(321, 56);
+            this.lblHereYouGo.TabIndex = 4;
+            this.lblHereYouGo.Text = "Here you go. Its a label.\r\nGood job boy scout.";
             // 
             // frmChocolateBoxes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 387);
+            this.Controls.Add(this.lblHereYouGo);
             this.Controls.Add(this.nudBoxDelivered);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lblNumDeliv);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmChocolateBoxes";
-            this.Text = "Form1";
+            this.Text = "Chocolate Boxes Benjamin Falsetto";
             ((System.ComponentModel.ISupportInitialize)(this.nudBoxDelivered)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -83,6 +107,7 @@
         private System.Windows.Forms.Label lblNumDeliv;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.NumericUpDown nudBoxDelivered;
+        private System.Windows.Forms.Label lblHereYouGo;
     }
 }
 

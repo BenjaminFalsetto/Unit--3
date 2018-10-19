@@ -15,6 +15,7 @@ namespace ChocolateBoxesBenF
         public frmChocolateBoxes()
         {
             InitializeComponent();
+            this.lblHereYouGo.Hide();
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -25,7 +26,28 @@ namespace ChocolateBoxesBenF
             //get number of boxes sold by user
             boxDelivered = (int)(nudBoxDelivered.Value);
 
-
+            //determine reward
+            if (boxDelivered > 20)
+            {
+                lblHereYouGo.Text = "Here you go. A prize. \nGood job boy scout.";
+                lblHereYouGo.Show();
+                nudBoxDelivered.Value = 1;
+            }
+            else
+            {
+                if (boxDelivered < 10)
+                {
+                    lblHereYouGo.Text = "Here you go. Honourable Mention. \nEveryone's a winner.";
+                    lblHereYouGo.Show();
+                    nudBoxDelivered.Value = 1;
+                }
+                else
+                {
+                    lblHereYouGo.Text = "Here you go. A small prize.";
+                    lblHereYouGo.Show();
+                    nudBoxDelivered.Value = 1;
+                }
+            }
         }
     }
 }
