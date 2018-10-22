@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Created by: Benjamin Falsetto
+ * Created on: 2018/10/18
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #19 - Chocolate Boxes
+ * This program accepts an input in the form of how many boxes were delivered and then gives you a prize based on it.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
