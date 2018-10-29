@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WalkingManBenF
 {
-    public partial class Form1 : Form
+    public partial class WalkingManFprm : Form
     {
-        public Form1()
+        public WalkingManFprm()
         {
             InitializeComponent();
         }
