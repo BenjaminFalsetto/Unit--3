@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FactorialDoWhile
+namespace ForEachControlObjBenF
 {
-    static class FactorialDoWhile
+    static class ForEachControlObj
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace FactorialDoWhile
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmFactorialDoWhile());
+            Application.Run(new frmForEachControlObj());
         }
     }
 }
