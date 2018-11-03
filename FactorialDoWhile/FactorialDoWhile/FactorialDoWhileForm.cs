@@ -23,13 +23,34 @@ namespace FactorialDoWhile
             int factorialCounter;
 
             //clear the items from the listbox
-            this.lstFactorialNumbers.ClearSelected();
+            this.lstFactorialNumbers.Items.Clear();
 
             //set final answer to 1
             factorialAnswer = 1;
 
             //get the number from the user
+            factorialNumber = Convert.ToDouble(this.txtFactorialNumber.Text);
 
+            //set the counter to 0
+            factorialCounter = 0;
+
+            //multip;u the counter by the next incremented number until it reaches the user's number
+            do
+            {
+                //increment the counter by 1
+                factorialCounter++;
+
+                //list the counter number in the listbox for the user to see
+                lstFactorialNumbers.Items.Add(factorialCounter);
+
+                // multiply the counter by the answer
+                factorialAnswer = factorialCounter * factorialAnswer;
+
+            } while (factorialCounter < factorialNumber);
+
+            //add the answer to its label and display the label
+            lblFactorialAnswer.Text = (factorialNumber + "! = " + factorialAnswer);
+            lblFactorialAnswer.Show();
         }
 
         private void txtFactorialNumber_TextChanged(object sender, EventArgs e)

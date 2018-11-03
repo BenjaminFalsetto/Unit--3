@@ -31,11 +31,12 @@
             this.btnCalculate = new System.Windows.Forms.Button();
             this.txtFactorialNumber = new System.Windows.Forms.TextBox();
             this.lstFactorialNumbers = new System.Windows.Forms.ListBox();
+            this.lblFactorialAnswer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(88, 55);
+            this.btnCalculate.Location = new System.Drawing.Point(97, 55);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
             this.btnCalculate.TabIndex = 0;
@@ -45,7 +46,7 @@
             // 
             // txtFactorialNumber
             // 
-            this.txtFactorialNumber.Location = new System.Drawing.Point(74, 102);
+            this.txtFactorialNumber.Location = new System.Drawing.Point(84, 102);
             this.txtFactorialNumber.Name = "txtFactorialNumber";
             this.txtFactorialNumber.Size = new System.Drawing.Size(100, 20);
             this.txtFactorialNumber.TabIndex = 1;
@@ -60,11 +61,22 @@
             this.lstFactorialNumbers.TabIndex = 2;
             this.lstFactorialNumbers.SelectedIndexChanged += new System.EventHandler(this.lstFactorialNumbers_SelectedIndexChanged);
             // 
+            // lblFactorialAnswer
+            // 
+            this.lblFactorialAnswer.AutoSize = true;
+            this.lblFactorialAnswer.Location = new System.Drawing.Point(117, 266);
+            this.lblFactorialAnswer.Name = "lblFactorialAnswer";
+            this.lblFactorialAnswer.Size = new System.Drawing.Size(92, 13);
+            this.lblFactorialAnswer.TabIndex = 3;
+            this.lblFactorialAnswer.Text = "Answer goes here";
+            this.lblFactorialAnswer.Visible = false;
+            // 
             // frmFactorialDoWhile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(268, 305);
+            this.Controls.Add(this.lblFactorialAnswer);
             this.Controls.Add(this.lstFactorialNumbers);
             this.Controls.Add(this.txtFactorialNumber);
             this.Controls.Add(this.btnCalculate);
@@ -80,6 +92,7 @@
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.TextBox txtFactorialNumber;
         private System.Windows.Forms.ListBox lstFactorialNumbers;
+        private System.Windows.Forms.Label lblFactorialAnswer;
     }
 }
 
