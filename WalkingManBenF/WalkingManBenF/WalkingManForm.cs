@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Created by: Benjamin Falsetto
+ * Created on: 2018/11/09
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #21 - Walking Man
+ * This program cycles through 10 photographs to make it seem like the man is walking
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
