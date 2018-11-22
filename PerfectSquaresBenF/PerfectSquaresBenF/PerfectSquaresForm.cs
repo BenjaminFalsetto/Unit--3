@@ -25,7 +25,20 @@ namespace PerfectSquaresBenF
             Double rootAsDouble;
             int rootAsInt;
 
+            //set the initial values
+            value = 1;
 
+            //clear the listbox
+            lstSquares.Items.Clear();
+
+            //get the user's end value from the numeric up down
+            endingValue = Convert.ToInt32(this.nudEndVal.Value);
+            
+            //continue stating any perfect squares between value and the user's end value
+            while (value <= endingValue)
+            {
+
+            }
         }
     }
 }
