@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Created by: Benjamin Falsetto
+ * Created on: 2018/11/05
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #20 - Factorial Do While
+ * This program takes user input in the form of a number and calculates the factorial of that number
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,7 +41,7 @@ namespace FactorialDoWhile
             //set the counter to 0
             factorialCounter = 0;
 
-            //multip;u the counter by the next incremented number until it reaches the user's number
+            //multiply the counter by the next incremented number until it reaches the user's number
             do
             {
                 //increment the counter by 1

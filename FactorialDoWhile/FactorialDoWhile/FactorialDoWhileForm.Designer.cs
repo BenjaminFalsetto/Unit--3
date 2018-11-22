@@ -64,7 +64,7 @@
             // lblFactorialAnswer
             // 
             this.lblFactorialAnswer.AutoSize = true;
-            this.lblFactorialAnswer.Location = new System.Drawing.Point(117, 266);
+            this.lblFactorialAnswer.Location = new System.Drawing.Point(88, 266);
             this.lblFactorialAnswer.Name = "lblFactorialAnswer";
             this.lblFactorialAnswer.Size = new System.Drawing.Size(92, 13);
             this.lblFactorialAnswer.TabIndex = 3;
