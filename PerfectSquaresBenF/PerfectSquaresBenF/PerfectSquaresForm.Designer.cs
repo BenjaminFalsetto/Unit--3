@@ -68,7 +68,7 @@
             this.Controls.Add(this.nudEndVal);
             this.Controls.Add(this.btnStart);
             this.Name = "PerfectSquaresForm";
-            this.Text = "Form1";
+            this.Text = "Perfect Squares Benjamin Falsetto";
             ((System.ComponentModel.ISupportInitialize)(this.nudEndVal)).EndInit();
             this.ResumeLayout(false);
 
