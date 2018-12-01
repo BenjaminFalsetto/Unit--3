@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Created by: Benjamin Falsetto
+ * Created on: 2018/11/10
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #27 - Control Objects
+ * This program changes the colour of objects on the form when certain objects are clicked.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
